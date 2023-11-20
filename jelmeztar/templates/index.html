@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kezdőlap</title>
+</head>
+<body>
+    <h1>Jelentkezz be</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="id_username">Felhasználónév:</label>
+        <input type="text" name="username" id="id_username" required><br>
+
+        <label for="id_password">Jelszó:</label>
+        <input type="password" name="password" id="id_password" required><br>
+
+        <input type="submit" value="Kuldés">
+    </form>
+
+
+</body>
+</html>
